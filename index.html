@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aswin — Futuristic Portfolio</title>
+  <meta name="description" content="Futuristic static portfolio — Aswin, UI/UX & Graphic Designer" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400&display=swap" rel="stylesheet">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-lines" aria-hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="g1"><stop offset="0" stop-opacity="1" stop-color="#00ff99"/><stop offset="1" stop-opacity="1" stop-color="#00d4ff"/></linearGradient>
+      </defs>
+      <g>
+        <path d="M0 10 C200 80, 400 0, 1000 40" fill="none" stroke="url(#g1)" stroke-width="1" opacity="0.6"></path>
+        <path d="M0 260 C300 200, 600 320, 1200 260" fill="none" stroke="url(#g1)" stroke-width="1" opacity="0.4"></path>
+      </g>
+    </svg>
+  </div>
+
+  <main class="card">
+    <header>
+      <div class="brand">
+        <div class="logo">zz</div>
+        <div>
+          <h1>Aswin</h1>
+          <p>UI/UX & Graphic Designer • Futuristic interfaces</p>
+        </div>
+      </div>
+      <nav>
+        <span class="nav-highlight">Give life your concepts</span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h2 class="headline">Designing future-friendly interfaces & experiences.</h2>
+        <p class="sub">I craft immersive UI/UX and visuals for holographic and digital products — focused on clarity, motion, and delight.</p>
+        <div class="ctas">
+          <a class="btn" href="#projects">View work</a>
+          <a class="btn ghost" href="#contact">Hire me</a>
+        </div>
+        <div class="location-info">
+          <strong>Location:</strong> Calicut · <strong>Role:</strong> UI/UX Designer at ERE Business Solution Pvt Ltd
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="avatar">
+          <img src="me.jpg" alt="Aswin K" />
+        </div>
+        <div class="meta">
+          <div>
+            <div class="name">Aswin K</div>
+            <div class="role">UI/UX & Graphic Designer</div>
+          </div>
+          <div class="availability">
+            <div class="status">Open to work</div>
+            <div class="freelance">Available for freelance</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="projects" aria-label="projects">
+      <article class="project">
+        <img src="Free_iPhone_Mockup_2.png" alt="Zinea OTT streaming" />
+        <h3>Zinea OTT streaming</h3>
+        <p class="project-desc">A next-gen OTT streaming platform for movies and shows. Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="project">
+        <img src="HERO3.png" alt="Philips piano academy" />
+        <h3>Philips piano academy</h3>
+        <p class="project-desc">Interactive learning for piano enthusiasts. Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="project">
+        <img src="Desktop - 2.png" alt="DOJOX" />
+        <h3>DOJOX</h3>
+        <p class="project-desc">A modern dojo management and booking system. Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="project">
+        <img src="eduzre home page 1.png" alt="Amora live" />
+        <h3>Amora live</h3>
+        <p class="project-desc">Live event streaming and engagement platform. Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="project">
+        <img src="mockup 2 (1) 1.png" alt="Paanigraha" />
+        <h3>Paanigraha</h3>
+        <p class="project-desc">Wedding planning and management made easy. Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="project">
+        <img src="HERO1.png" alt="Zend fashion" />
+        <h3>Zend fashion</h3>
+        <p class="project-desc">Trendy online fashion store for all. Lorem ipsum dolor sit amet.</p>
+      </article>
+    </section>
+
+    <section class="lower">
+      <div class="skills" id="skills">
+        <h3>Skills</h3>
+        <p class="sub">Design systems, prototypes, motion, brand identity</p>
+        <div class="skill-list">
+          <div class="skill">Figma</div>
+          <div class="skill">UI/UX</div>
+          <div class="skill">Web Design</div>
+          <div class="skill">App Design</div>
+          <div class="skill">Prototyping</div>
+          <div class="skill">Interaction Design</div>
+          <div class="skill">Dashboard Design</div>
+        </div>
+      </div>
+
+      <aside class="contact" id="contact">
+        <h3>Contact</h3>
+        <p class="sub">Let’s build something futuristic together. I respond quickly to messages.</p>
+        <p>Email: <strong>aswinrishikumar7@gmail.com</strong></p>
+        <p>Phone: <strong>9746865830</strong></p>
+        <button class="lnk" id="openContactForm" type="button">Contact</button>
+      </aside>
+
+      <!-- Contact Popup Modal -->
+      <div id="contactModal">
+        <form id="contactForm">
+          <h3>Contact Me</h3>
+          <label>Name:<br><input type="text" name="name" required /></label>
+          <label>Description:<br><textarea name="desc" required rows="3"></textarea></label>
+          <label>Contact via:<br>
+            <select name="contactType" required>
+              <option value="mail">Mail</option>
+              <option value="phone">Phone Number</option>
+            </select>
+          </label>
+          <button type="submit">Submit</button>
+          <button type="button" id="closeContactForm">Cancel</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Aswin — Crafted with a touch of neon
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
